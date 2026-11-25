@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f3f5f9;
+}
+body { margin: 0; min-height: 100vh; padding: 48px 18px; }
+.container {
+  width: min(100%, 680px); margin: 0 auto; background: #fff;
+  border: 1px solid #e4e8f0; border-radius: 18px; padding: 32px;
+  box-shadow: 0 12px 35px rgba(25, 40, 70, .06);
+}
+.eyebrow { margin: 0 0 8px; color: #4263eb; font-size: 12px; font-weight: 750; letter-spacing: .12em; }
+h1 { margin: 0; font-size: 32px; }
+.subtitle { color: #68738a; margin: 8px 0 28px; }
+.task-form label { display: block; font-weight: 650; margin-bottom: 9px; }
+.input-row { display: flex; gap: 10px; }
+input {
+  flex: 1; min-width: 0; border: 1px solid #cfd6e4; border-radius: 9px;
+  padding: 12px 13px; font: inherit; outline: none;
+}
+input:focus { border-color: #4263eb; box-shadow: 0 0 0 3px rgba(66, 99, 235, .12); }
+button {
+  border: 0; border-radius: 9px; padding: 0 18px; background: #2458d3;
+  color: white; font: inherit; font-weight: 650; cursor: pointer;
+}
+button:hover { background: #1948b8; }
+button:focus-visible { outline: 3px solid #a9bcff; outline-offset: 2px; }
+.message { min-height: 20px; margin: 8px 0 0; color: #c0392b; font-size: 13px; }
+.task-section { margin-top: 25px; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; }
+h2 { font-size: 18px; margin: 0; }
+.count { color: #68738a; font-size: 13px; }
+.task-list { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 10px; }
+.task-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  border: 1px solid #e7eaf1; border-radius: 10px; padding: 12px 13px;
+}
+.task-name { overflow-wrap: anywhere; }
+.task-actions { display: flex; gap: 7px; flex-shrink: 0; }
+.task-actions button { padding: 7px 10px; font-size: 12px; }
+.task-actions .delete { background: #fff0ef; color: #b42318; }
+.task-actions .delete:hover { background: #ffdfdc; }
+.empty-state { color: #8992a4; text-align: center; padding: 24px 8px; border: 1px dashed #d9deea; border-radius: 10px; }
+footer { border-top: 1px solid #edf0f5; margin-top: 28px; padding-top: 16px; display: flex; justify-content: space-between; gap: 12px; color: #8a93a5; font-size: 12px; }
+@media (max-width: 520px) {
+  body { padding: 20px 12px; }
+  .container { padding: 22px 17px; }
+  .input-row { flex-direction: column; }
+  button { min-height: 42px; }
+  .task-item { align-items: flex-start; flex-direction: column; }
+  footer { flex-direction: column; }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">QA PRACTICAL 1.5</p>
+      <h1>To-Do List</h1>
+      <p class="subtitle">Aplikasi latihan untuk identifikasi dan klasifikasi bug.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <label for="task-input">Nama task</label>
+      <div class="input-row">
+        <input id="task-input" type="text" placeholder="Contoh: Belajar Testing" autocomplete="off">
+        <button type="submit" id="submit-button">Tambah</button>
+      </div>
+      <p id="form-message" class="message" aria-live="polite"></p>
+    </form>
+
+    <section class="task-section">
+      <div class="section-heading">
+        <h2>Daftar Task</h2>
+        <span id="task-count" class="count">0 task</span>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty-state">Belum ada task. Tambahkan task pertama.</p>
+    </section>
+
+    <footer>
+      <span>Local practice app</span>
+      <span id="storage-status">Data tersimpan di browser</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
