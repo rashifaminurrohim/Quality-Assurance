@@ -1,0 +1,4 @@
+"No.","Jenis Elemen","Lokasi","Sebelum Deploy","Setelah Deploy","Ada Perbedaan?","Deskripsi Perbedaan"
+"1","Teks / Heading","Ringkasan pesanan - Desktop","Ringkasan Pesanan","Ringkasan Pesananan","Ya","Terdapat kesalahan penulisan kata Pesanan pada heading production."
+"2","Button","Area checkout - Desktop","Tombol Buat Pesanan tampil normal","Tombol Buat Pesanan tampil normal","Tidak","Tidak ditemukan perubahan ukuran atau posisi tombol pada tampilan desktop."
+"3","Button / Layout","Area checkout - Mobile","Tombol Buat Pesanan berada di dalam panel checkout","Tombol Buat Pesanan melebar dan bergeser keluar dari panel checkout","Ya","Tombol mengalami horizontal overflow sehingga sebagian tampilannya keluar dari batas panel."
