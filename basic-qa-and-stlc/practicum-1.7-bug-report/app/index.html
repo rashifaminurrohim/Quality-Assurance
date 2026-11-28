@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Practice Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <p class="eyebrow">QA PRACTICE APPLICATION</p>
+    <h1>Simple Calculator</h1>
+    <p class="intro">Aplikasi kalkulator sederhana untuk latihan identifikasi dan pelaporan bug.</p>
+
+    <label for="first-number">Angka pertama</label>
+    <input id="first-number" type="number" value="2">
+
+    <label for="operator">Operator</label>
+    <select id="operator">
+      <option value="+">Penjumlahan (+)</option>
+      <option value="-">Pengurangan (-)</option>
+      <option value="*">Perkalian (×)</option>
+      <option value="/">Pembagian (÷)</option>
+    </select>
+
+    <label for="second-number">Angka kedua</label>
+    <input id="second-number" type="number" value="2">
+
+    <button id="calculate" type="button">Hitung (=)</button>
+
+    <section class="result-panel" aria-live="polite">
+      <span>Hasil</span>
+      <output id="result">—</output>
+    </section>
+    <p class="hint">Skenario pengujian: masukkan 2, pilih +, masukkan 2, lalu klik Hitung.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
